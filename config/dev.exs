@@ -3,8 +3,8 @@ import Config
 # Configure your database
 config :todo_phoenix, TodoPhoenix.Repo,
   username: "root",
-  password: "",
-  hostname: "localhost",
+  password: "password", # dockerの設定情報に合わせてDBの接続情報を編集
+  hostname: "db", # dockerの設定情報に合わせてDBの接続情報を編集
   database: "todo_phoenix_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
@@ -19,11 +19,11 @@ config :todo_phoenix, TodoPhoenix.Repo,
 config :todo_phoenix, TodoPhoenixWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
-  http: [ip: {127, 0, 0, 1}, port: 4000],
+  http: [ip: {0, 0, 0, 0}, port: 4000], # コンテナの外からアクセスできるようにする
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "vtgmZYtfEPs24j4ma01MFL9Zd5QkeqeVt1NnXpj3qHDOfcoM2CKNoFY38KvP87S8",
+  secret_key_base: "prSo1H8i9FGoR6I1aXEWKiaQCCv53L4N3Ywz9QUWv+M44TBt24IUm9Ifjufa7yWW",
   watchers: []
 
 # ## SSL Support

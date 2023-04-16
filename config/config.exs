@@ -18,7 +18,7 @@ config :todo_phoenix, TodoPhoenixWeb.Endpoint,
     layout: false
   ],
   pubsub_server: TodoPhoenix.PubSub,
-  live_view: [signing_salt: "u3m8trlv"]
+  live_view: [signing_salt: "hdywNMjF"]
 
 # Configures the mailer
 #

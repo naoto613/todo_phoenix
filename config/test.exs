@@ -17,7 +17,7 @@ config :todo_phoenix, TodoPhoenix.Repo,
 # you can enable the server option below.
 config :todo_phoenix, TodoPhoenixWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "AicpfuGted/cA7N6d4Gi/1nTzU3IATOp7V8/mCSAMc0PiakSHMi+Z589+ot1VqxL",
+  secret_key_base: "5F8Wzyl/H4MLFNtOCwosSbY32/sVl0VwXAXMxMlyRaY9oTSdo1ufYj8b4FzsGnuW",
   server: false
 
 # In test we don't send emails.

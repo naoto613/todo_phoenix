@@ -7,7 +7,7 @@ defmodule TodoPhoenixWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_todo_phoenix_key",
-    signing_salt: "cl0gO7Ct",
+    signing_salt: "PPR5hewh",
     same_site: "Lax"
   ]
 
